@@ -12,23 +12,23 @@ The **model**, also called the **dynamics**, describes how the environment respo
 
 An MDP contains the following sets:
 
-* A state space $\mathcal{S}$ containing all possible states:
+* A state space $\mathcal{S}$ containing all possible states: 
 
-  $$
-  s\in\mathcal{S}.
-  $$
+$$
+s\in\mathcal{S}.
+$$
 
-* An action space $\mathcal{A}(s)$ containing the actions available in state $s$:
+* An action space $\mathcal{A}(s)$ containing the actions available in state $s$: 
 
-  $$
-  a\in\mathcal{A}(s).
-  $$
+$$
+a\in\mathcal{A}(s).
+$$
 
 * A reward set $\mathcal{R}(s,a)$ containing the possible rewards associated with state-action pair $(s,a)$:
 
-  $$
-  r\in\mathcal{R}(s,a).
-  $$
+$$
+r\in\mathcal{R}(s,a).
+$$
 
 The state-transition probability is
 
