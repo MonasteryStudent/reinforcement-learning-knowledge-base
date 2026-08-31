@@ -19,7 +19,7 @@ A particular trajectory produces a return value $g_t$. Because different traject
 The reinforcement-learning objective can be expressed as
 
 $$
-\pi^* = \underset{\pi}{\operatorname{arg\,max}} \ \mathbb{E}_{\pi}[G_t],
+\pi^* = \underset{\pi}{\arg\max} \mathbb{E}_{\pi}[G_t],
 $$
 
 where $\pi^*$ is an optimal policy and $\mathbb{E}_{\pi}[G_t]$ is the expected return when the agent follows policy $\pi$.
