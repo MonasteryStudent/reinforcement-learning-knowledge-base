@@ -1,7 +1,5 @@
-# Obsidian workspace state
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache/
+# Obsidian settings and workspace state
+.obsidian/
 
 # Obsidian trash
 .trash/
@@ -9,3 +7,9 @@
 # Operating-system files
 .DS_Store
 Thumbs.db
+
+# Virtual Environment
+.venv/
+
+# Generated Anki flashcard exports
+**/Flashcards.tsv
