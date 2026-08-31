@@ -18,7 +18,7 @@ If an infinite trajectory produces positive [[Reward|rewards]] indefinitely, a d
 A particular episode beginning at time step $0$ and terminating at time step $T$ can be represented as
 
 $$
-\tau_{\mathrm{episode}} = (s_0,a_0,r_1,s_1,a_1,r_2,\ldots,a_{T-1},r_T,s_T),
+\tau_{\mathrm{episode}}=(s_0,a_0,r_1,s_1,a_1,r_2,\ldots,a_{T-1},r_T,s_T),
 $$
 
 where $s_T$ is the terminal state.
@@ -26,9 +26,7 @@ where $s_T$ is the terminal state.
 A continuing trajectory has no terminal time and can be represented as
 
 $$
-\tau_{\mathrm{continuing}}
-=
-(s_0,a_0,r_1,s_1,a_1,r_2,s_2,\ldots).
+\tau_{\mathrm{continuing}}=(s_0,a_0,r_1,s_1,a_1,r_2,s_2,\ldots).
 $$
 
 To convert an episodic task into a continuing one, the terminal state can be made absorbing. One option is to give it only a stay action:

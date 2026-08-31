@@ -23,9 +23,7 @@ $$
 which represents the probability of transitioning to next state $s'$ after taking action $a$ in state $s$:
 
 $$
-p(s' \mid s,a)
-=
-P(S_{t+1}=s' \mid S_t=s,A_t=a).
+p(s' \mid s,a)=P(S_{t+1}=s' \mid S_t=s,A_t=a).
 $$
 
 For every valid state-action pair, the probabilities of all possible next states must sum to one:

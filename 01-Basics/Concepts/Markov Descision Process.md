@@ -69,17 +69,13 @@ $$
 The Markov property for the state transition is expressed as
 
 $$
-p(s_{t+1}\mid s_t,a_t,s_{t-1},a_{t-1},\ldots,s_0,a_0)
-=
-p(s_{t+1}\mid s_t,a_t).
+p(s_{t+1}\mid s_t,a_t,s_{t-1},a_{t-1},\ldots,s_0,a_0)=p(s_{t+1}\mid s_t,a_t).
 $$
 
 Similarly, the Markov property for the reward is
 
 $$
-p(r_{t+1}\mid s_t,a_t,s_{t-1},a_{t-1},\ldots,s_0,a_0)
-=
-p(r_{t+1}\mid s_t,a_t).
+p(r_{t+1}\mid s_t,a_t,s_{t-1},a_{t-1},\ldots,s_0,a_0)=p(r_{t+1}\mid s_t,a_t).
 $$
 
 These equations state that once the current state $s_t$ and action $a_t$ are known, the earlier interaction history provides no additional information about the probabilities of the next state or reward.

@@ -9,9 +9,7 @@ A policy can be deterministic or stochastic. A deterministic policy selects one 
 A policy is denoted by $\pi(a \mid s)$ and represents the probability of selecting action $a$ in state $s$:
 
 $$
-\pi(a \mid s)
-=
-P(A_t=a \mid S_t=s).
+\pi(a \mid s)=P(A_t=a \mid S_t=s).
 $$
 
 For every state $s$, the probabilities of all available actions must sum to one:

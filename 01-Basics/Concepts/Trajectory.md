@@ -34,7 +34,5 @@ $$
 A single step of the interaction can be represented as
 
 $$
-s_t
-\xrightarrow{a_t,\;r_{t+1}}
-s_{t+1}.
+s_t \xrightarrow{a_t,\ r_{t+1}} s_{t+1}.
 $$
