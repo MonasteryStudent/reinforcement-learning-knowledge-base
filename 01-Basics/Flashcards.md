@@ -295,9 +295,7 @@ How is the Markov property for state transitions in an MDP expressed?
 The Markov property is
 
 $$
-p(s_{t+1}\mid s_t,a_t,s_{t-1},a_{t-1},\ldots,s_0,a_0)
-=
-p(s_{t+1}\mid s_t,a_t).
+p(s_{t+1}\mid s_t,a_t,s_{t-1},a_{t-1},\ldots,s_0,a_0) = p(s_{t+1}\mid s_t,a_t).
 $$
 
 Once the current state and action are known, the preceding history provides no additional information about the next-state probability.
@@ -317,10 +315,7 @@ How does a fixed policy determine the state-transition probability of the result
 The transition probability is
 
 $$
-p_\pi(s' \mid s)
-=
-\sum_{a \in \mathcal{A}(s)}
-\pi(a \mid s)\,p(s' \mid s,a).
+p_\pi(s' \mid s) = \sum_{a \in \mathcal{A}(s)} \pi(a \mid s)\,p(s' \mid s,a).
 $$
 
 It averages the MDP transition probabilities over the actions according to their probabilities under the fixed policy.
