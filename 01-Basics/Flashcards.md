@@ -337,3 +337,17 @@ The Markov property refers to the memoryless property of a stochastic process. I
 **Tags**
 
 01-Basics
+
+## Card 022
+
+**Front**
+
+How can the reward be viewed as a human-machine interface?
+
+**Back**
+
+The reward allows a human designer to guide the agent toward desired behaviour by assigning numerical feedback to outcomes. The agent learns behaviour that maximizes its expected return.
+
+**Tags**
+
+01-Basics
