@@ -59,12 +59,9 @@ def parse_cards(markdown: str) -> list[tuple[str, str, str, str]]:
             raise ValueError(f"Duplicate card ID: {card_id}")
         seen_ids.add(card_id)
 
-        try:
-            front = extract_field(block, "Front", "Back")
-            back = extract_field(block, "Back", "Tags")
-            tags = extract_field(block, "Tags")
-        except ValueError as error:
-            raise ValueError(f"Card {card_id}: {error}") from error
+        front = extract_field(block, "Front", "Back")
+        back = extract_field(block, "Back", "Tags")
+        tags = extract_field(block, "Tags")
 
         cards.append(
             (
