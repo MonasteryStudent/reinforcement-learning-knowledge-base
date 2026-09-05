@@ -351,3 +351,45 @@ The reward allows a human designer to guide the agent toward desired behaviour b
 **Tags**
 
 01-Basics
+
+## Card 023
+
+**Front**
+
+What is the expected return?
+
+**Back**
+
+The expected return is the probability-weighted mean of all possible return values. It represents the average return expected over many trajectories generated under a policy.
+
+It is denoted by
+
+$$
+\mathbb{E}_{\pi}[G_t],
+$$
+
+where $G_t$ is the return random variable and $\pi$ is the policy being followed.
+
+**Tags**
+
+01-Basics
+
+## Card 024
+
+**Front**
+
+What does the return random variable $G_t$ represent?
+
+**Back**
+
+The return random variable $G_t$ represents the cumulative future reward from time step $t$ onward. For a discounted continuing task,
+
+$$
+G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+\cdots.
+$$
+
+It is random because following a policy may generate different trajectories and therefore different reward sequences. A particular trajectory produces a concrete return value $g_t$.
+
+**Tags**
+
+01-Basics
