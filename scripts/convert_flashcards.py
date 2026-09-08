@@ -7,7 +7,10 @@ import re
 from pathlib import Path
 
 
-CARD_HEADING = re.compile(r"^## Card ([0-9]+)\s*$", re.MULTILINE)
+CARD_HEADING = re.compile(
+    r"^## Card (\d{2}-\d{3})\s*$",
+    re.MULTILINE,
+)
 
 
 def extract_field(block: str, field: str, next_field: str | None = None) -> str:
