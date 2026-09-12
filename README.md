@@ -8,6 +8,8 @@ The knowledge base is organized by chapter, with separate notes for concepts and
 
 Open the repository folder as an Obsidian vault to browse the concept notes. The flashcards are maintained as Markdown files and can be converted for import into Anki.
 
+> **Note:** Some LaTeX expressions and Obsidian-specific syntax may not render correctly in GitHub's Markdown preview.
+
 ## Flashcards
 
 Each chapter contains a `Flashcards.md` file with questions about definitions, mathematical formulations, and conceptual understanding.
