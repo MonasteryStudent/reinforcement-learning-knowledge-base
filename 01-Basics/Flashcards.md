@@ -1,4 +1,4 @@
-## Card 001
+## Card 01-001
 
 **Front**
 
@@ -12,7 +12,7 @@ A policy is a strategy that tells the agent how to select an action in every sta
 
 01-Basics
 
-## Card 002
+## Card 01-002
 
 **Front**
 
@@ -30,7 +30,7 @@ $$
 
 01-Basics
 
-## Card 003
+## Card 01-003
 
 **Front**
 
@@ -44,7 +44,7 @@ Reinforcement learning is a learning approach in which an agent learns by intera
 
 01-Basics
 
-## Card 004
+## Card 01-004
 
 **Front**
 
@@ -58,7 +58,7 @@ An agent is the decision-making entity in a reinforcement-learning problem. It s
 
 01-Basics
 
-## Card 005
+## Card 01-005
 
 **Front**
 
@@ -72,7 +72,7 @@ The environment represents everything outside the agent that is relevant to the 
 
 01-Basics
 
-## Card 006
+## Card 01-006
 
 **Front**
 
@@ -86,7 +86,7 @@ A state describes the agent's current situation with respect to the environment.
 
 01-Basics
 
-## Card 007
+## Card 01-007
 
 **Front**
 
@@ -100,7 +100,7 @@ An action represents a choice available to the agent in a particular state. By t
 
 01-Basics
 
-## Card 008
+## Card 01-008
 
 **Front**
 
@@ -114,7 +114,7 @@ A reward is numerical feedback received by the agent after taking an action in a
 
 01-Basics
 
-## Card 009
+## Card 01-009
 
 **Front**
 
@@ -128,7 +128,7 @@ A state transition is the change from the agent's current state to a next state 
 
 01-Basics
 
-## Card 010
+## Card 01-010
 
 **Front**
 
@@ -142,7 +142,7 @@ A trajectory is a sequence of states, actions, and rewards generated while the a
 
 01-Basics
 
-## Card 011
+## Card 01-011
 
 **Front**
 
@@ -156,7 +156,7 @@ The return is the cumulative reward obtained from a particular time step onward 
 
 01-Basics
 
-## Card 012
+## Card 01-012
 
 **Front**
 
@@ -170,7 +170,7 @@ An episode is a trajectory that ends when the agent reaches a terminal state. It
 
 01-Basics
 
-## Card 013
+## Card 01-013
 
 **Front**
 
@@ -184,7 +184,7 @@ A Markov decision process is a mathematical framework for describing sequential 
 
 01-Basics
 
-## Card 014
+## Card 01-014
 
 **Front**
 
@@ -198,7 +198,7 @@ A Markov process describes the evolution of states where the probability of the 
 
 01-Basics
 
-## Card 015
+## Card 01-015
 
 **Front**
 
@@ -218,7 +218,7 @@ It asks which policy $\pi$ maximizes the expected return.
 
 01-Basics
 
-## Card 016
+## Card 01-016
 
 **Front**
 
@@ -244,27 +244,31 @@ for every available action $a$.
 
 01-Basics
 
-## Card 017
+## Card 01-017
 
 **Front**
 
-How are the reward probabilities for a state-action pair normalized?
+What does the normalization condition for reward probabilities mean?
 
 **Back**
 
-For every state-action pair $(s,a)$,
+For every state-action pair $(s,a)$, the probabilities of all possible reward values must sum to one:
 
 $$
-\sum_{r \in \mathcal{R}(s,a)} p(r \mid s,a)=1.
+\sum_{r\in\mathcal{R}(s,a)}p(r\mid s,a)=1.
 $$
 
-Every reward probability must also be non-negative.
+This means that one of the possible reward values must occur after taking action $a$ in state $s$. Receiving no reward is represented by the reward value $r=0$.
+
+In a deterministic reward process, one reward value has probability $1$ and all others have probability $0$. In a stochastic reward process, multiple reward values can have probabilities between $0$ and $1$.
+
+Every reward probability must be non-negative.
 
 **Tags**
 
 01-Basics
 
-## Card 018
+## Card 01-018
 
 **Front**
 
@@ -284,7 +288,7 @@ where $\gamma \in (0,1)$ is the discount rate.
 
 01-Basics
 
-## Card 019
+## Card 01-019
 
 **Front**
 
@@ -304,7 +308,7 @@ Once the current state and action are known, the preceding history provides no a
 
 01-Basics
 
-## Card 020
+## Card 01-020
 
 **Front**
 
@@ -324,7 +328,7 @@ It averages the MDP transition probabilities over the actions according to their
 
 01-Basics
 
-## Card 021
+## Card 01-021
 
 **Front**
 
@@ -338,7 +342,7 @@ The Markov property refers to the memoryless property of a stochastic process. I
 
 01-Basics
 
-## Card 022
+## Card 01-022
 
 **Front**
 
@@ -352,7 +356,7 @@ The reward allows a human designer to guide the agent toward desired behaviour b
 
 01-Basics
 
-## Card 023
+## Card 01-023
 
 **Front**
 
@@ -374,7 +378,7 @@ where $G_t$ is the return random variable and $\pi$ is the policy being followed
 
 01-Basics
 
-## Card 024
+## Card 01-024
 
 **Front**
 
