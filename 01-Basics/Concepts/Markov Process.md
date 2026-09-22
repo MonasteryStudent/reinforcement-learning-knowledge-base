@@ -2,7 +2,7 @@
 
 A **Markov process (MP)** describes the evolution of [[State|states]] where the probability of the next state depends only on the current state and not on the preceding state history.
 
-A Markov process can be obtained from a [[Markov Descision Process|Markov decision process]] by fixing its [[Policy|policy]].
+A Markov process can be obtained from a [[Markov Decision Process|Markov decision process]] by fixing its [[Policy|policy]].
 
 ## Mathematical Formulation
 
