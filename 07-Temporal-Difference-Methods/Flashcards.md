@@ -469,3 +469,108 @@ Expected Sarsa requires slightly more computation but generally has lower estima
 **Tags**
 
 07-Temporal-Difference-Methods
+
+## Card 07-021
+
+**Front**
+
+What is n-step Sarsa?
+
+**Back**
+
+n-step Sarsa is a generalization of Sarsa that uses $n$ observed rewards before bootstrapping from an estimated action value.
+
+The algorithm evaluates the action values of a given policy. It must be combined with policy improvement to learn an optimal policy.
+
+**Tags**
+
+07-Temporal-Difference-Methods
+
+## Card 07-022
+
+**Front**
+
+What is the n-step target used by n-step Sarsa?
+
+**Back**
+
+The sampled n-step target is
+
+$$
+g_t^{(n)}
+=
+\sum_{i=0}^{n-1}
+\gamma^i r_{t+i+1}
++
+\gamma^n q_t(s_{t+n},a_{t+n}).
+$$
+
+It contains $n$ observed rewards and then bootstraps from the estimated action value of the state-action pair reached after $n$ steps.
+
+**Tags**
+
+07-Temporal-Difference-Methods
+
+## Card 07-023
+
+**Front**
+
+Why must the update of $(s_t,a_t)$ in n-step Sarsa be delayed?
+
+**Back**
+
+The n-step target requires the experience sequence up to
+
+$$
+r_{t+n},s_{t+n},a_{t+n}.
+$$
+
+This information is not yet available at time step $t$. The algorithm must therefore wait until time step $t+n$ before updating the action value of $(s_t,a_t)$.
+
+**Tags**
+
+07-Temporal-Difference-Methods
+
+## Card 07-024
+
+**Front**
+
+How are ordinary Sarsa and Monte Carlo learning special cases of n-step Sarsa?
+
+**Back**
+
+When $n=1$, the target is
+
+$$
+g_t^{(1)}
+=
+r_{t+1}
++
+\gamma q_t(s_{t+1},a_{t+1}),
+$$
+
+which is the ordinary Sarsa target.
+
+When $n$ extends to the end of the episode, the target becomes the complete discounted return. With $n=\infty$ and $\alpha=1$, the algorithm becomes Monte Carlo learning.
+
+**Tags**
+
+07-Temporal-Difference-Methods
+
+## Card 07-025
+
+**Front**
+
+How does the choice of $n$ affect the bias and variance of n-step Sarsa?
+
+**Back**
+
+A small $n$ causes early bootstrapping from current action-value estimates. This generally produces greater bias but lower variance.
+
+A large $n$ uses more observed rewards and bootstraps later. This generally produces lower bias but greater variance.
+
+The increase in variance occurs when the generated rewards, transitions, or actions are stochastic.
+
+**Tags**
+
+07-Temporal-Difference-Methods
